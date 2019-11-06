@@ -108,7 +108,9 @@ $(document).ready(function() {
 
 	setLocalStorage();
 	parameters = JSON.parse(localStorage.parameters);
-	render(parameters);		
+	render(parameters);
+	button__count[0].classList.add('hide');
+	button__reset[0].classList.add('hide');
 })
 
 
@@ -139,7 +141,8 @@ button__next.click(function(){
 		if(question__1[i].checked){			
 			question__const[0].classList.add('hide');
 			button__next[0].classList.add('hide');
-			question__random[getRandomQuestion(0, 1)].classList.remove('hide');			
+			question__random[getRandomQuestion(0, 1)].classList.remove('hide');
+			button__count[0].classList.remove('hide');
 		}	
 	}
 })
@@ -191,6 +194,7 @@ button__count.click(function(){
 		showDialog(message);
 	};
 	button__count[0].classList.add('hide');
+	button__reset[0].classList.remove('hide');
 })
 
 
