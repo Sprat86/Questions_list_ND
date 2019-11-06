@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Список вопросов</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body class="body">
+
+<header class="header">
+    <h1 class="header__title">Добро пожаловать!</h1>   
+</header>
+
+<main>
+<div class="wrapper">
+<h2>Предлагаем ответить Вам на следующие вопросы:</h2>
+
+<div class='container'></div>
+
+<form>
+  <fieldset class="question__const">
+    <legend>Вопрос 1:</legend>
+
+    <input type="radio" id="buy__pensilcase" name="question__1">
+    <label for="buy__pensilcase">Купить новый пенал – Деньги (-75)</label><br/>
+
+    <input type="radio" id="repair__pensilcase" name="question__1">
+    <label for="repair__pensilcase">Просидеть до позднего вечера и починить старый пенал – Здоровье (-1)</label><br/>
+
+    <input type="radio" id="old__pensilcase" name="question__1">
+    <label for="old__pensilcase">Продолжить пользоваться старым пеналом без починки – Настроение (-1)</label>
+  </fieldset>
+
+
+  <fieldset class="question__random hide">
+    <legend>Вопрос 2:</legend>
+
+    <input type="radio" id="buy__bone" name="question__2">
+    <label for="buy__bone">Купить косточку – Деньги (-55)</label><br/>
+
+    <input type="radio" id="play__park" name="question__2">
+    <label for="play__park">Задержаться в парке и поиграть – Здоровье (-1), Настроение (+1)</label><br/>
+
+    <input type="radio" id="return__home" name="question__2">
+    <label for="return__home">Пойти домой – Настроение (-1)</label>
+  </fieldset>
+
+
+  <fieldset class="question__random hide">
+    <legend>Вопрос 2:</legend>
+
+    <input type="radio" id="get__paper" name="question__3">
+    <label for="get__paper">Раздать листовки – Деньги +100, Здоровье -1</label><br/>
+
+    <input type="radio" id="refuse_paper" name="question__3">
+    <label for="refuse_paper">Отказаться от купона – Настроение -1</label><br/>    
+  </fieldset>  
+</form>
+
+<button class='button__next'>Следующий вопрос</button>
+<button class='button__count'>Выполнить расчёты</button>
+<button class='button__reset'>Обнулить расчёты</button>
+
+</div>
+</main>
+
+<footer>
+    <div class="footer__copyright">
+        <p>Разработано Боткиным Александром <a href="https://github.com/Sprat86" >https://github.com/Sprat86</a></p>
+        <span>Информация предоставлена компанией <a href="http://school.nd.ru/"> Департамент&nbsp;образования&nbsp;компании&nbsp;«Новый Диск»</a></span>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
