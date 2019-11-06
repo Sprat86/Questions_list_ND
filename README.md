@@ -1,4 +1,4 @@
-## Questions_list_ND_V2
+## Questions_list_ND
 
 Необходимо реализовать следующий алгоритм 
 
